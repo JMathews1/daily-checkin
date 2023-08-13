@@ -3,9 +3,13 @@ import MorningCheckin from '../components/MorningCheckin';
 
 function MorningPage() {
   return (
-    <div>
-      <h1>Morning Checkin</h1>
-      <MorningCheckin />
+      <div>
+        <h1>Morning Checkin 👋</h1>
+
+        <div className='form-container'>
+        <MorningCheckin />
+        </div>
+
     </div>
   );
 }

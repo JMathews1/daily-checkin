@@ -37,7 +37,7 @@ function MorningCheckin() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="morningform" onSubmit={handleSubmit}>
       <h1>Morning Checkin</h1>
       {answers.map((answer, index) => (
         <div key={index}>
@@ -45,6 +45,7 @@ function MorningCheckin() {
           <input
             type="text"
             id={`answer${index}`}
+            className = "input"
             value={answer}
             onChange={(e) => handleInputChange(e, index)}
           />
@@ -52,7 +53,7 @@ function MorningCheckin() {
       ))}
       <div>
         <label htmlFor="goal">Goal to improve/maintain good habits at work:</label>
-        <input type="text" id="goal" value={goal} onChange={(e) => setGoal(e.target.value)} />
+        <input  className = "input" type="text" id="goal" value={goal} onChange={(e) => setGoal(e.target.value)} />
       </div>
       <button type="submit">Submit</button>
       {successMessage && <div className="success-message">{successMessage}</div>}

@@ -38,23 +38,23 @@ function AfternoonCheckin() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="afternoonform" onSubmit={handleSubmit}>
       <h1>Afternoon Checkin</h1>
       <div>
         <label htmlFor="achievements">Q1: Rate your achievement:</label>
-        <input type="text" id="achievements" value={achievements} onChange={(e) => setAchievements(e.target.value)} />
+        <input className="input" type="text" id="achievements" value={achievements} onChange={(e) => setAchievements(e.target.value)} />
       </div>
       <div>
         <label htmlFor="bestThing">Q2: What was the best work-related thing that happened to you today at work?</label>
-        <input type="text" id="bestThing" value={bestThing} onChange={(e) => setBestThing(e.target.value)} />
+        <input className="input" type="text" id="bestThing" value={bestThing} onChange={(e) => setBestThing(e.target.value)} />
       </div>
       <div>
         <label htmlFor="unexpectedAchievement">Q3: Was there anything else that you achieved but didn't plan for in the morning?</label>
-        <input type="text" id="unexpectedAchievement" value={unexpectedAchievement} onChange={(e) => setUnexpectedAchievement(e.target.value)} />
+        <input className="input" type="text" id="unexpectedAchievement" value={unexpectedAchievement} onChange={(e) => setUnexpectedAchievement(e.target.value)} />
       </div>
       <div>
         <label htmlFor="difficulties">Q4: Was there something that made it difficult to achieve what you planned to do?</label>
-        <input type="text" id="difficulties" value={difficulties} onChange={(e) => setDifficulties(e.target.value)} />
+        <input className="input" type="text" id="difficulties" value={difficulties} onChange={(e) => setDifficulties(e.target.value)} />
       </div>
       <div>
         <label htmlFor="activeGoal">Q5: Did you actively try to achieve the goal?</label>
@@ -65,23 +65,23 @@ function AfternoonCheckin() {
       </div>
       <div>
         <label htmlFor="goalStrategy">Q6: How did you carry out your strategy? Did it positively influence your workday?</label>
-        <input type="text" id="goalStrategy" value={goalStrategy} onChange={(e) => setGoalStrategy(e.target.value)} />
+        <input className="input" type="text" id="goalStrategy" value={goalStrategy} onChange={(e) => setGoalStrategy(e.target.value)} />
       </div>
       <div>
         <label htmlFor="newGoal">Q7: Is there a goal that you would like to set for yourself?</label>
-        <textarea id="newGoal" value={newGoal} onChange={(e) => setNewGoal(e.target.value)} />
+        <input className="input" type="text" id="newGoal" value={newGoal} onChange={(e) => setNewGoal(e.target.value)} />
       </div>
       <div>
         <label htmlFor="firstStep">Q8: What's the first step you will take towards reaching this goal?</label>
-        <input type="text" id="firstStep" value={firstStep} onChange={(e) => setFirstStep(e.target.value)} />
+        <input className="input" type="text" id="firstStep" value={firstStep} onChange={(e) => setFirstStep(e.target.value)} />
       </div>
       <div>
         <label htmlFor="otherGoals">Q9: Did any other goals come to mind today that you would like to mention?</label>
-        <input type="text" id="otherGoals" value={otherGoals} onChange={(e) => setOtherGoals(e.target.value)} />
+        <input className="input" type="text" id="otherGoals" value={otherGoals} onChange={(e) => setOtherGoals(e.target.value)} />
       </div>
       <div>
         <label htmlFor="approach">Q10: How did you approach assessing your achievements and the progress you've made today?</label>
-        <input type="text" id="approach" value={approach} onChange={(e) => setApproach(e.target.value)} />
+        <input className="input" type="text" id="approach" value={approach} onChange={(e) => setApproach(e.target.value)} />
       </div>
       <button type="submit">Submit</button>
     </form>
