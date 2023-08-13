@@ -42,8 +42,14 @@ function AfternoonCheckin() {
       <h1>Afternoon Checkin</h1>
       <div>
         <label htmlFor="achievements">Q1: Rate your achievement:</label>
-        <input className="input" type="text" id="achievements" value={achievements} onChange={(e) => setAchievements(e.target.value)} />
-      </div>
+        <select id="achievements" value={achievements} onChange={(e) => setAchievements(e.target.value)}>
+          {[...Array(10)].map((_, index) => (
+            <option key={index + 1} value={index + 1}>
+              {index + 1}
+            </option>
+          ))}
+        </select>      
+        </div>
       <div>
         <label htmlFor="bestThing">Q2: What was the best work-related thing that happened to you today at work?</label>
         <input className="input" type="text" id="bestThing" value={bestThing} onChange={(e) => setBestThing(e.target.value)} />
